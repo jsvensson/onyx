@@ -1,0 +1,26 @@
+{
+  "name": "Rationalist",
+  "version": "0.0.1",
+  "description": "A list builder for Infinity",
+  "main": "index.js",
+  "dependencies": {
+    "babel-core": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "react": "^15.1.0",
+    "react-addons-test-utils": "^15.1.0",
+    "react-dom": "^15.1.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "enzyme": "^2.3.0",
+    "jsdom": "^9.2.1",
+    "sinon": "^1.17.4"
+  },
+  "scripts": {
+    "test": "mocha --require ./setup.js **/*.spec.js"
+  },
+  "keywords": [],
+  "author": "Johan Svensson <johan@atomicplayboy.net> (http://atomicplayboy.net/)",
+  "license": "ISC"
+}
