@@ -31,8 +31,8 @@ describe('Unit component', () => {
     ]
   }
 
-  it('renders something', () => {
-    const wrapper = mount(<Unit unitData={testProfile} />)
+  it('renders', () => {
+    const wrapper = shallow(<Unit unitData={testProfile} />)
     expect(wrapper).to.have.tagName('ul')
   })
 

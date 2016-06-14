@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 
-describe('the environment', () => {
-  it('works, hopefully', () => {
-    expect(true).to.be.true;
-  });
-});
+describe('the universe', () => {
+  it('still exists', () => {
+    expect(true).to.be.true
+  })
+})
