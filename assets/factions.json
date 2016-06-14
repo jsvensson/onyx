@@ -1,0 +1,65 @@
+{
+	[{
+		"name": "Combined Army",
+		"abbr": "CA",
+		"id": 1,
+		"sectorials": [
+			"Morat Aggression Force",
+			"Onyx Contact Force",
+			"Shasvastii Expeditionary Force"
+		]
+	}, {
+		"name": "Tohaa",
+		"abbr": "T",
+		"id": 2
+	}, {
+		"name": "PanOceania",
+		"abbr": "PO",
+		"id": 3,
+		"sectorials": [
+			"Shock Army of Acontecimento",
+			"Military Orders",
+			"Neoterran Capitaline Army"
+		]
+	}, {
+		"name": "Yu Ying",
+		"abbr": "YY",
+		"id": 4,
+		"sectorials": [
+			"Imperial Service",
+			"Japanese Sectorial Army"
+		]
+	}, {
+		"name": "Ariadna",
+		"abbr": "A",
+		"id": 5,
+		"sectorials": [
+			"Caledonian Highlander Army",
+			"Force de Réponse Rapide Merovingienne",
+			"USAriadna Ranger Force"
+		]
+	}, {
+		"name": "Haqqislam",
+		"abbr": "H",
+		"id": 6,
+		"sectorials": [
+			"Hassassin Bahram",
+			"Qapu Khalqi"
+		]
+	}, {
+		"name": "Nomads",
+		"abbr": "N",
+		"id": 7,
+		"sectorials": [
+			"Jurisdictional Command of Corregidor",
+			"Jurisdictional Command of Bakunin"
+		]
+	}, {
+    "name": "ALEPH",
+    "abbr": "A",
+    "id": 8,
+    "sectorials": [
+      "Steel Phalanx"
+    ]
+	}]
+}
