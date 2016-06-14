@@ -26,8 +26,8 @@
     "webpack-dev-server": "^1.14.1"
   },
   "scripts": {
-    "test": "mocha --require ./setup.js **/*.spec.js",
-    "test:watch": "mocha --require ./setup.js **/*.spec.js --watch --reporter min"
+    "test": "mocha --require ./setup.js spec/**/*.spec.js",
+    "test:watch": "mocha --require ./setup.js spec/**/*.spec.js --watch --reporter min"
   },
   "keywords": [],
   "author": "Johan Svensson <johan@atomicplayboy.net> (http://atomicplayboy.net/)",
