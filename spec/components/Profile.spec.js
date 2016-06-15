@@ -17,9 +17,13 @@ describe('Profile component', () => {
     skills: ['Morat', 'Fireteam: Core']
   }
 
-  it('has an id prop', () => {
-    const wrapper = mount(<Profile id={5} profile={testProfile} />)
-    expect(wrapper).to.have.id('5')
+  context('properties', () => {
+    it('passes id along', () => {
+      const wrapper = mount(<Profile id="foo" profile={testProfile} />)
+      const expected = 'foo'
+
+      expect(wrapper).to.have.id(expected)
+    })
   })
 
 });

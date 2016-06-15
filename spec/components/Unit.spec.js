@@ -31,28 +31,29 @@ describe('Unit component', () => {
     ]
   }
 
-  it('renders', () => {
-    const wrapper = shallow(<Unit unitData={testProfile} />)
-    expect(wrapper).to.have.tagName('ul')
+  context('rendering', () => {
+    it('renders', () => {
+      const wrapper = shallow(<Unit unitData={testProfile} />)
+      expect(wrapper).to.have.tagName('ul')
+    })
+
+    it('renders a unit profile', () => {
+      const wrapper = mount(<Unit unitData={testProfile} />)
+      expect(wrapper.find('.profile').length).to.be.at.least(1)
+    })
+
+    it('renders expected number of unit profiles', () => {
+      const wrapper = mount(<Unit unitData={testProfile} />)
+      const expected = 2
+
+      expect(wrapper).to.have.exactly(expected).descendants('.profile')
+    })
+
+    it('renders a profile with profile cost', () => {
+      const wrapper = mount(<Unit unitData={testProfile} />)
+      const expected = 'Morat (14)'
+
+      expect(wrapper.find('#0')).to.have.text(expected)
+    })
   })
-
-  it('renders a unit profile', () => {
-    const wrapper = mount(<Unit unitData={testProfile} />)
-    expect(wrapper.find('.profile').length).to.be.at.least(1)
-  })
-
-  it('renders expected number of unit profiles', () => {
-    const wrapper = mount(<Unit unitData={testProfile} />)
-    const expected = 2
-
-    expect(wrapper).to.have.exactly(expected).descendants('.profile')
-  })
-
-  it('renders a profile with profile cost', () => {
-    const wrapper = mount(<Unit unitData={testProfile} />)
-    const expected = 'Morat (14)'
-
-    expect(wrapper.find('#0')).to.have.text(expected)
-  })
-
 });
